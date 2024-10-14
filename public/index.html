@@ -10,216 +10,289 @@
 
 </head>
 <body class="bg-slate-50">
-    <section class="bg-gray-800 p-4" id="top">
-        <div class="max-w-screen-lg m-auto" >
-            <div class="container mx-auto flex justify-between items-center">
-                <div class="text-white text-lg font-bold cursor">
-                    <a href="#">MyLogo</a>
-                </div>
-                <ul class="hidden md:flex space-x-4">
-                    <li><a href="#" class="text-white hover:text-gray-400">Home</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-400">About</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-400">Skills</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-400">Projects</a></li>
-                    <li><a href="#" class="text-white hover:text-gray-400">Contact</a></li>
-                </ul>
-                <div class="md:hidden">
-                    <button id="menu-toggle" class="text-white focus:outline-none">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
+<!-- navbar -->
+<section class="bg-gray-800 p-4" id="top">
+    <div class="max-w-screen-lg m-auto py-3" >
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-lg font-bold cursor">
+                <a href="#" class="text-3xl font-bold">Kehinde <span class="text-blue-500">Dramola</span></a>
+                <!-- <h1 class="text-3xl font-bold py-3 pb-2">Hello, <span class="text-blue-500">I'm</span></h1> -->
             </div>
-
-            <ul id="mobile-menu" class="md:hidden flex flex-col space-y-2 mt-2 hidden">
-                <li><a href="#" class="text-white">Home</a></li>
-                <li><a href="#" class="text-white">About</a></li>
-                <li><a href="#" class="text-white">Services</a></li>
-                <li><a href="#" class="text-white">Contact</a></li>
+            <ul class="hidden md:flex space-x-4">
+                <li><a href="#home" class="text-white hover:text-blue-500">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-blue-500">About</a></li>
+                <li><a href="#skills" class="text-white hover:text-blue-500">Skills</a></li>
+                <li><a href="#education" class="text-white hover:text-blue-500">Education</a></li>
+                <li><a href="#project" class="text-white hover:text-blue-500">Projects</a></li>
+                <li><a href="#contact" class="text-white hover:text-blue-500">Contact</a></li>
             </ul>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-    </section>
 
-    <!-- main introducing the developer -->
-<div class="container col-xxl-8 px-4 " id="home">
-  <div class="row flex-lg-row align-items-center g-5 py-5">
-    <div class="col-lg-6">
-      <h1 class="display-5 fw-bold lh-1 mb-3">Hi, I'm <span>Kehinde Daramola</span></h1>
-      <p class="lead">
-        Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
-      </p>
-      <div class="">
-        <a href="#"><img src="./asset/facebook.svg" alt=""></i></a>
-        <a href="#"><img src="./asset/linkedin.svg" alt=""></a>
-        <a href="#"><img src="./asset/twitter-x.svg" alt=""></a>
+        <ul id="mobile-menu" class="md:hidden flex flex-col space-y-2 mt-8 hidden">
+          <li><a href="#home" class="text-white hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="text-white hover:text-blue-500">About</a></li>
+          <li><a href="#skills" class="text-white hover:text-blue-500">Skills</a></li>
+          <li><a href="#education" class="text-white hover:text-blue-500">Education</a></li>
+          <li><a href="#project" class="text-white hover:text-blue-500">Projects</a></li>
+          <li><a href="#contact" class="text-white hover:text-blue-500">Contact</a></li>
+        </ul>
+    </div>
+  </section>
+
+<!-- main introducing the developer -->
+  <section class="bg-gray-700 py-16" id="home">
+    <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto justify-between text-white">
+      <div class="text-center md:text-left border-white">
+        <h1 class="text-3xl font-bold py-3 pb-2">Hello, <span class="text-blue-500">I'm</span></h1>
+        <h1 class="text-blue-500 text-5xl font-bold py-3 pb-2">Kehinde Daramola</h1>
+        <h1 class="text-3xl font-bold py-3 pb-2">Front-end Developer</h1>
+        <p class="text-sm pb-6 bg-blend-lighten md:bg-blend-darken">
+          With the knowledge I have in web development and design, I offer <br> the best projects resulting in quality work.
+        </p>
+        <button class="pb-8">
+          <a href="#" class="button rounded-md bg-blue-500 text-white p-2 text-2xl">Let's Talk</a>
+        </button>
+        <div class="text-white text-4xl pt-6 pb-6">
+          <ul class="flex justify-center md:justify-start space-x-4">
+            <a href="#"><i class="fa-brands fa-youtube p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+            <a href="#"><i class="fa-brands fa-github p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="flex justify-center md:block">
+        <img src="./asset/weather.png" class="h-80 w-100" alt="Developer Image" loading="lazy">
       </div>
     </div>
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img src="./asset/weather.png" class="d-block mx-lg-auto img-fluid" alt="Developer Image" width="400" height="400" loading="lazy">
+  </section>
+
+  <!-- About -->
+  <section class="bg-gray-800 p-4 py-12" id="about">
+    <div class="max-w-screen-lg mx-auto py-12">
+      <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto justify-around text-white">
+        <div class="flex justify-center md:block">
+          <img src="./asset/weather.png" class="h-80 w-100" alt="Developer Image" loading="lazy">
+        </div>
+
+        <div class="text-center pt-14 md:text-left border-white">
+          <!-- <h1 class="text-3xl font-bold py-3 pb-2">My, <span class="text-blue-500">Intro</span></h1> -->
+          <h4 class="font-bold text-sm">My, <span class="text-blue-500">Intro</span></h4>
+          <h1 class="text-3xl font-bold pb-2">About Me</h1>
+          <p class="text-sm pb-6 bg-blend-lighten md:bg-blend-darken">
+            With the knowledge I have in web development and design, I offer <br> the best projects resulting in quality work.
+          </p>
+          <button class="pb-8">
+            <a href="#" class="button rounded-md bg-blue-500 text-white p-2 text-2xl">Contact Me</a>
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </section>
+
+  <!-- Skills -->
+  <section class="bg-gray-700 py-16" id="skills">
+    <div class="max-w-screen-lg mx-auto py-12">
+      <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto justify-around text-white">
+        <div class="text-center items-center md:text-left border-white">
+          <!-- <h1 class="text-3xl font-bold py-3 pb-2">My, <span class="text-blue-500">Intro</span></h1> -->
+          <h4 class="font-bold text-sm">Favourite <span class="text-blue-500">Skills</span></h4>
+          <h1 class="text-3xl font-bold pb-2">My Skills</h1>
+          <p class="text-sm pb-6 bg-blend-lighten md:bg-blend-darken">
+            With the knowledge I have in web development and design,<br> I offer the best projects resulting in quality work.
+          </p>
+          <button class="pb-8">
+            <a href="#" class="button rounded-md bg-blue-600 text-white p-2 text-2xl">See Projects</a>
+          </button>
+        </div>
+
+        <div class="flex items-center justify-around space-x-10">
+          <ol class="flex flex-col">
+            <li>HTML $ CSS</li>
+            <li>Javascript</li>
+            <li>Bootsrap</li>
+            <li>React.Js</li>
+            <li>Tailwind</li>
+          </ol>
+          
+          <ol class="flex flex-col" start="6">
+            <li>Node</li>
+            <li>Express</li>
+            <li>Postman</li>
+            <li>Postgress</li>
+            <li>Git & GitHub</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- Education -->
-<section class="education container" id="education">
-  <h2 class="heading">My <span>Journey</span>
-  </h2>
+  <section class="bg-gray-800 p-4" id="education">
+    <div class="max-w-screen-lg text-white m-auto mb-10 py-12">
+      <h4 class="text-center font-bold pb-2">My <span class="text-blue-500">Journey</span></h4>
+      <h2 class="text-center font-bold pb-10 text-3xl pb-2 md:text-3xl">Education</h2>
+      <div class="flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-8">
+        <div>
+          <h4 class="font-bold text-2xl pb-4">Education</h4>
 
-  <div class="education-row">
-    <div class="row flex-lg-row align-items-center g-5 py-5 education-column">
-      <div class="col-lg-6">
-        <h4 class="title">Education</h4>
-
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year">October 2014 - March 2019</div>
+          <div>
+            <div class="pb-4">
+              <div >October 2014 - March 2019</div>
               <h5>Ekiti State University</h5>
               <p>Library And Information Science.</p>
             </div>
-          </div>
 
-          <div class="education-content">
-            <div class="content">
-              <div class="year">January - December 2023</div>
+            <div class="pb-4">
+              <div >January - December 2023</div>
               <h5>Computer Education Center, Aptech.</h5>
               <p>Web Development with Python.</p>
-             <main></main></div>                        
-          </div>
-            
-          <div class="education-content">
-            <div class="content">
-              <div class="year">September 2021 - July 2022</div>
+            </div>
+              
+            <div>
+              <div>September 2021 - July 2022</div>
               <h5>National Youth Service Corp (NYSC)</h5>
               <p>Subject Teacher: Data Processing And ICT.</p>
             </div>
           </div>
         </div>
-      </div>
-      
-      <div class="col-lg-6">
-        <h4 class="title">Experience</h4>
-  
-        <div class="education-box">
-          <div class="education-content">
-            <div class="content">
-              <div class="year">July - December 2018</div>
+        
+        <div class="">
+          <h4 class="text-2xl font-bold pb-4">Experience</h4>
+    
+          <div>
+            <div class="pb-4">
+              <div >July - December 2018</div>
               <h5>Dangote Sugar Refinery Apapa Wharf</h5>
               <p>Hr Assistant (Industrial Training).</p>
             </div>
-          </div>
-            
-          <div class="education-content">
-            <div class="content">
-              <div class="year">January - December 2023</div>
+              
+            <div class="pb-4">
+              <div >January - December 2023</div>
               <h5>Computer Education Center, Aptech.</h5>
               <p>Frontend Developer Intern</p>
             </div>
-          </div>
-            
-          <div class="education-content">
-            <div class="content">
-              <div class="year">September 2021 - July 2022</div>
+              
+            <div>
+              <div >September 2021 - July 2022</div>
               <h5>BSSL Technology</h5>
               <p>Frontend Developer Intern.</p>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 <!-- features showing project -->
-<div class="container" id="featured-3">
-  <h2 class="pb-2">Projects</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-    <div class="feature col" id="">
-      <h4>Expense Tracker</h4>
-      <a href="">
-        <img src="./Asset/expense-tracker.png" alt="Expense Tracker App" width="350px" height="220vh">
-      </a>
-    </div>
-    <div class="feature col">
-      <h4>FoodRecipe</h4>
-      <a href="">
-        <img src="./Asset/foodrecipe.png" alt="FoodRecipe App" width="350px" height="220vh">
-      </a>
-    </div>
-    <div class="feature col">
-      <h4>Weather App</h4>
-      <a href="">
-        <img src="./Asset/weather.png" alt="Weather App" width="350px" height="220vh">
-      </a>
+  <div class="bg-gray-500 pt-6 pb-0.5" id="project">
+    <div class="max-w-screen-lg text-white m-auto mb-10 py-12">
+      <h4 class="text-center font-bold pb-2">My <span class="text-blue-500">Jobs</span></h4>
+      <h2 class="text-center font-bold pb-10 text-3xl md:text-3xl">Recent Projects</h2>
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
+        <div class="shadow-2xl" id="" >
+          <h2 class="text-2xl font-bold">Expense Tracker</h2>
+          <a href="">
+            <img src="./Asset/expense-tracker.png" alt="Expense Tracker App" class="h-48 rounded-lg" width="330px">
+          </a>
+        </div>
+
+        <div class="text-2xl">
+          <h2 class="text-2xl font-bold">FoodRecipe</h2>
+          <a href="">
+            <img src="./Asset/foodrecipe.png" alt="FoodRecipe App" class="h-48 rounded-lg" width="330px ">
+          </a>
+        </div>
+
+        <div class="text-2xl">
+          <h2 class="text-2xl font-bold">Weather App</h2>
+          <a href="">
+            <img src="./Asset/weather.png" alt="Weather App" class="h-48 rounded-md" width="330px">
+          </a>
+        </div>
+      </div>
+      <!-- <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
+        <div class="shadow-2xl" id="" >
+          <h2 class="text-2xl">Expense Tracker</h2>
+          <a href="">
+            <img src="./Asset/expense-tracker.png" alt="Expense Tracker App" class="h-48 rounded-lg" width="330px">
+          </a>
+        </div>
+
+        <div class="text-2xl">
+          <h2>FoodRecipe</h2>
+          <a href="">
+            <img src="./Asset/foodrecipe.png" alt="FoodRecipe App" class="h-48 rounded-lg" width="330px ">
+          </a>
+        </div>
+
+        <div class="text-2xl">
+          <h2>Weather App</h2>
+          <a href="">
+            <img src="./Asset/weather.png" alt="Weather App" class="h-48 rounded-md" width="330px">
+          </a>
+        </div>
+      </div> -->
     </div>
   </div>
-</div>
 
-    <section class="bg-gray-800 p-4">
-        <div class="bg-gray-400 max-w-screen-lg mx-auto p-10">
-            <form class="flex flex-col justify-center mx-auto text-white w-full max-w-lg"> 
-                <h3 class="mx-auto text-2xl mb-10 text-center">Get In Touch</h3>
-                <input type="text" id="fname" name="firstname" placeholder="First Name" class="w-full h-12 pl-6 mb-4 placeholder-gray-800 text-gray-800">
-                <input type="text" id="lname" name="lastname" placeholder="Last Name" class="w-full h-12 pl-6 mb-4 placeholder-gray-800 text-gray-800">
-                <input type="text" id="email" name="email" placeholder="Email" class="w-full h-12 pl-6 mb-4 placeholder-gray-800 text-gray-800">
-                <textarea id="subject" name="subject" placeholder="Message" class="w-full h-36 pl-6 mb-4 placeholder-gray-800 focus:placeholder-gray-700 text-gray-800"></textarea>
-                <br>
-                <input type="submit" value="Submit" id="submit" class="w-[140px] mx-auto h-12 bg-gray-800 text-white text-lg">
-            </form>
+<!-- contact -->
+  <section class="bg-gray-800 p-4" id="contact">
+      <div class="max-w-screen-lg mx-auto py-12 px-10" id="contact">
+          <form action="b30bc4d3-e765-4e6c-bab9-d8c6a4142f6d" method="POST" class="flex flex-col justify-center mx-auto text-white w-full max-w-lg"> 
+            <!-- class="text-center font-bold pb-10 text-5xl md:text-3xl" -->
+              <h3 class="mx-auto text-3xl font-bold mb-10 text-center">Get In Touch</h3>
+              <p class="hidden" id="name"></p>
+              <input type="text" id="fname" name="firstname" placeholder="First Name" class="w-full h-12 pl-6 mb-4 placeholder-gray-800 text-gray-800" required>
+              <p class="hidden" id="password"></p>
+              <input type="text" id="lname" name="lastname" placeholder="Last Name" class="w-full h-12 pl-6 mb-4 placeholder-gray-800 text-gray-800" required>
+              <p class="hidden" id="message-box"></p>
+              <textarea id="subject" name="subject" placeholder="Message" class="w-full h-36 pt-5 pl-6 mb-4 placeholder-gray-800 focus:placeholder-gray-700 text-gray-800" required></textarea>
+              <br>
+              <p class="hidden" id="status-message"></p>
+              <!-- <button type="submit"></button> -->
+              <!-- <input type="submit" value="Submit" onclick="handleSubmit()" id="submit" class="w-[140px] mx-auto h-12 bg-gray-800 text-white text-lg"> -->
+              <button type="submit" class="pb-8">
+                <a class="button rounded-md bg-blue-500 text-white py-2 px-4 text-2xl">Send Message</a>
+              </button>
+          </form>
+      </div>
+  </section>
+  
+  <footer class="bg-gray-700">
+    <div class="max-w-screen-lg mx-auto px-4 py-12">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="text-white text-center text-lg font-bold mb-4 md:mb-0">
+          <h1 class="text-3xl font-bold py-3 pb-2">Kehinde <span class="text-blue-500">Daramola</span></h1>
+          <h1 class="text-xl font-bold py-3 pb-2">Front-end Developer</h1>
         </div>
-    </section>
 
-    <footer class="bg-gray-500">
-    <div class="max-w-screen-lg mx-auto p-4">
-        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="text-white text-lg font-bold mb-4 md:mb-0">
-                <a href="#">MyLogo</a>
-            </div>
-
-            <div class="flex flex-col md:flex-row text-white text-lg font-bold space-y-4 md:space-y-0 md:space-x-8">
-                <div class="md:space-x-10">
-                    <h2 class="ml-1 md:ml-10">Link</h2>
-                    <ul class="space-y-2 md:flex-col">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Skills</li>
-                        <li>Project</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2 class="ml-1">Social</h2>
-                    <ul class="flex space-x-4 md:px-[-4]">
-                        <a href="#"><i class="fa-brands fa-youtube p-1 text-4xl text-red-600"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram p-1 text-4xl text-red-600"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin p-1 text-4xl text-blue-400"></i></a>
-                        <a href="#"><i class="fa-brands fa-discord p-1 text-4xl text-blue-400"></i></a>
-                    </ul>
-                </div>
-
-                <div class="flex flex-col-2">
-                    <h2 class="ml-1">Contact</h2>
-                    <ul class="space-y-2 mt-2">
-                        <a href="tel:+2348147655242">+234 814 765 5242</a>
-                        <a href="mailto:daramolakenny18@gmail.com">daramolakenny18@gmail.com</a>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="bg-gray-400 text-gray-800 p-1 mt-4 md:mt-0">
-                <a href="#top"><i class="fa-solid fa-arrow-up text-4xl"></i></a>
-            </div>
-        </div>   
-        <div class="text-white text-xs flex justify-center mt-6">
-            Copyright ©2024 KEHINDE DARAMOLA. All Rights Reserved.
+        <div class="text-white text-4xl pt-6 pb-6">
+          <ul class="flex justify-center md:justify-start space-x-4">
+            <a href="#"><i class="fa-brands fa-youtube p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+            <a href="#"><i class="fa-brands fa-github p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i></a>
+          </ul>
         </div>
+
+        <div class="text-white font-bold text-xs flex justify-center">
+          Copyright &copy; 2024 KEHINDE DARAMOLA. All Rights Reserved.
+        </div>
+      </div> 
+        
+      <div class="text-gray-800 mt-4 md:mt-[10] flex justify-end">
+        <a href="#top"><i class="fa-solid fa-arrow-up text-2xl text-blue-300"></i></a>
+      </div>
     </div>
-</footer>
+  </footer>
 
-    
-
-    
-
-    <script src="/src/script.js"></script>
+  <script src="/src/script.js"></script>
 </body>
 </html>
