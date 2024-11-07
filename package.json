@@ -2,14 +2,16 @@
   "name": "my-portfolio",
   "version": "1.0.0",
   "description": "personal-portfolio",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css" : "npx tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "start": "npm run build-css && live-server src/index.html"
   },
   "author": "kehinde Daramola",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.13",
+    "live-server": "^1.2.2"
   }
 }
