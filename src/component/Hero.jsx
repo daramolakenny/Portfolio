@@ -46,7 +46,7 @@ const Hero = () => {
           <div className="text-white text-4xl pt-2 pb-6">
             <ul className="flex justify-center md:justify-start space-x-4">
               <a
-                href="https://www.youtube.com/@DaramolaKehinde-k9v"
+                href="https://x.com/ADEDEJI75478695"
                 className="bg-blue-500 flex items-center justify-center mt-2 rounded w-10 h-10"
               >
                 <FontAwesomeIcon icon={faX} className="text-[1rem]" />

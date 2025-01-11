@@ -47,7 +47,7 @@ const Footer = () => {
             <div className="flex flex-row items-start text-2xl md:items-start space-y-2">
               My Profile:{" "}
               <ol>
-                <a href="https://www.youtube.com/@DaramolaKehinde-k9v">
+                <a href="https://x.com/ADEDEJI75478695">
                   <i className="fa-brands fa-youtube p-1 bg-blue-500 rounded-md shadow-xl opacity-100"></i>
                 </a>
               </ol>
