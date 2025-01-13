@@ -1,5 +1,5 @@
 import React from 'react';
-import Foodrecipe from "/src/assets/images/foodrecipe";
+import Foodrecipe from "/src/assets/images/Foodrecipe";
 import expensetracker from "/src/assets/images/expensetracker.png";
 import Hamilton from "/src/assets/images/Hamilton.png";
 import Uootes from "/src/assets/images/Uootes.png";
