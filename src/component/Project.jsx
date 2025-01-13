@@ -1,9 +1,16 @@
 import React from 'react'
+import weather from "/src/assets/images/weather.png";
+import FoodRecipe from "/src/assets/images/FoodRecipe.png";
+import expensetracker from "/src/assets/images/expensetracker.png";
+import Hamilton from "/src/assets/images/Hamilton.png";
+import Uootes from "/src/assets/images/Uootes.png";
+import Brainwave from "/src/assets/images/Brainwave.png";
+import Apple from "/src/assets/images/Apple.png";
 
 const Project = () => {
   return (
     <div className="w-full relative bg-[#191923] pt-20 pb-6" id="project">
-      <div className="flex flex-col container pb-4 mx-auto py-8 px-6 text-white">
+      <div className="flex flex-col container pb-4 md:mx-auto py-8 px-auto md:px-6 text-white">
         <div className="flex flex-col">
           <div className="py-4 max-w-[24rem] mx-auto text-center md:[]24rem]">
             <h2 className="text-white px-14 font-sans font-bold text-3xl pb-2">
@@ -18,13 +25,13 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-10 md:flex-row ml-[7.5rem]">
+          <div className="flex flex-wrap mr-20 gap-10 md:flex-row ml-[5.5rem]">
             <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">Weather App</h2>
-              <a href="">
+              <h2 className="text-2xl font-bold">Hamilton</h2>
+              <a href="http://hamiltontechnical.com">
                 <img
-                  src="/src/assets/images/weather.png"
-                  alt="Expense Tracker App"
+                  src={Hamilton}
+                  alt="Hamilton"
                   className="h-48 rounded-lg"
                   width="300px"
                 />
@@ -32,11 +39,11 @@ const Project = () => {
             </div>
 
             <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">FoodRecipe</h2>
-              <a href="">
+              <h2 className="text-2xl font-bold">Uootes Web <span className='text-[18px]'>(in collaboration)</span></h2>
+              <a href="http://Uootes.com">
                 <img
-                  src="/src/assets/images/foodrecipe.png"
-                  alt="FoodRecipe App"
+                  src={Uootes}
+                  alt="Uootes Website"
                   className="h-48 rounded-lg"
                   width="300px"
                 />
@@ -47,8 +54,8 @@ const Project = () => {
               <h2 className="text-2xl font-bold">Expense Tracker</h2>
               <a href="">
                 <img
-                  src="/src/assets/images/expense-tracker.png"
-                  alt="Weather App"
+                  src={expensetracker}
+                  alt="Expense-Tracker"
                   className="h-48 rounded-md"
                   width="300px"
                 />
@@ -56,11 +63,11 @@ const Project = () => {
             </div>
 
             <div className="shadow-2xl" id="">
-              <h2 className="text-2xl">Expense Tracker</h2>
+              <h2 className="text-2xl">FoodRecipe App</h2>
               <a href="">
                 <img
-                  src="./src/assets/images/expense-tracker.png"
-                  alt="Expense Tracker App"
+                  src={FoodRecipe}
+                  alt="FoodRecipe App"
                   className="h-48 rounded-lg"
                   width="300px"
                 />
@@ -68,11 +75,11 @@ const Project = () => {
             </div>
 
             <div className="shadow-2xl">
-              <h2 className="text-2xl">FoodRecipe</h2>
+              <h2 className="text-2xl">Apple Phone</h2>
               <a href="">
                 <img
-                  src="./src/assets/images/Apple.png"
-                  alt="FoodRecipe App"
+                  src={Apple}
+                  alt="Apple"
                   className="h-48 rounded-lg"
                   width="300px "
                 />
@@ -80,11 +87,11 @@ const Project = () => {
             </div>
 
             <div className="shadow-2xl">
-              <h2 className="text-2xl">Weather App</h2>
+              <h2 className="text-2xl">Brainwave</h2>
               <a href="">
                 <img
-                  src="./src/assets/images/Brainwave.png"
-                  alt="Weather App"
+                  src={Brainwave}
+                  alt="Brainwave"
                   className="h-48 rounded-md"
                   width="300px"
                 />

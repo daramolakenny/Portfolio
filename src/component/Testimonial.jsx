@@ -2,6 +2,9 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import Testy1 from "/src/assets/images/Testy1.jpeg";
+import Testy2 from "/src/assets/images/Testy2.jpeg";
+import Testy3 from "/src/assets/images/Testy3.jpeg";
 
 const Testimonial = () => {
   return (
@@ -36,12 +39,12 @@ const Testimonial = () => {
             </p>
             <div className="flex gap-4 pl-4 pb-2">
               <img
-                src={"kenny"}
+                src={Testy1}
                 alt=""
                 className="w-14 h-14 rounded-full bg-black"
               />
               <div className="flex flex-col">
-                <h1 className="font-bold text-2xl">Diana Jones</h1>
+                <h1 className="font-bold text-2xl">Michael Raph</h1>
                 <h4 className="text-gray-900 font-semibold">Web developer</h4>
               </div>
             </div>
@@ -70,7 +73,7 @@ const Testimonial = () => {
             </p>
             <div className="flex gap-4 pl-4 pb-2">
               <img
-                src={"kenny"}
+                src={Testy2}
                 alt=""
                 className="w-14 h-14 rounded-full bg-black"
               />
@@ -105,12 +108,12 @@ const Testimonial = () => {
             </p>
             <div className="flex gap-4 pl-4 pb-2">
               <img
-                src={"kenny"}
+                src={Testy3}
                 alt=""
                 className="w-14 h-14 rounded-full bg-black"
               />
               <div className="flex flex-col">
-                <h1 className="font-bold text-2xl">Diana Jones</h1>
+                <h1 className="font-bold text-2xl">Cole Dan</h1>
                 <h4 className="text-gray-900 font-semibold">Web developer</h4>
               </div>
             </div>

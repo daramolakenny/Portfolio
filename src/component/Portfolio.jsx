@@ -51,7 +51,7 @@ const Portfolio = () => {
               <h1 className="font-bold">My Profile:</h1>
               <div className="flex item-center gap-2">
                 <a
-                  href="https://www.youtube.com/@DaramolaKehinde-k9v"
+                  href="https://x.com/ADEDEJI75478695"
                   className="bg-black p-2 flex items-center justify-center mt-2 rounded-full w-10 h-10"
                 >
                   <FontAwesomeIcon icon={faX} className="text-[1rem]" />
