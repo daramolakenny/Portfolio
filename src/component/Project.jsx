@@ -1,6 +1,6 @@
 import React from 'react';
-import Foodrecipe from "/src/assets/images/Foodrecipe";
-import expensetracker from "/src/assets/images/expensetracker.png";
+import Food from "/src/assets/images/Food";
+import Expense from "/src/assets/images/Expense.png";
 import Hamilton from "/src/assets/images/Hamilton.png";
 import Uootes from "/src/assets/images/Uootes.png";
 import Brainwave from "/src/assets/images/Brainwave.png";
@@ -53,7 +53,7 @@ const Project = () => {
               <h2 className="text-2xl font-bold">Expense Tracker</h2>
               <a href="">
                 <img
-                  src={expensetracker}
+                  src={Expense}
                   alt="Expense-Tracker"
                   className="h-48 rounded-md"
                   width="300px"
@@ -65,7 +65,7 @@ const Project = () => {
               <h2 className="text-2xl">FoodRecipe App</h2>
               <a href="">
                 <img
-                  src={Foodrecipe}
+                  src={Food}
                   alt="FoodRecipe App"
                   className="h-48 rounded-lg"
                   width="300px"
