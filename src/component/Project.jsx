@@ -1,6 +1,6 @@
 import React from 'react'
 import weather from "/src/assets/images/weather.png";
-import FoodRecipe from "/src/assets/images/FoodRecipe.png";
+import Foodrecipe from "/src/assets/images/Foodrecipe.png";
 import expensetracker from "/src/assets/images/expensetracker.png";
 import Hamilton from "/src/assets/images/Hamilton.png";
 import Uootes from "/src/assets/images/Uootes.png";
@@ -66,7 +66,7 @@ const Project = () => {
               <h2 className="text-2xl">FoodRecipe App</h2>
               <a href="">
                 <img
-                  src={FoodRecipe}
+                  src={Foodrecipe}
                   alt="FoodRecipe App"
                   className="h-48 rounded-lg"
                   width="300px"
