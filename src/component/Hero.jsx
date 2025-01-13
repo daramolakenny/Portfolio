@@ -1,5 +1,5 @@
 import React from "react";
-import Background from "/src/assets/images/Background.png";
+import Heroe from "/src/assets/images/Heroe.png";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -70,7 +70,7 @@ const Hero = () => {
 
         <div className="flex max-w-[54rem] mr-20 justify-center items-center mt-6 lg:mt-0">
           <img
-            src={Background}
+            src={Heroe}
             className="h-80 w-100"
             alt="Developer Image"
           />
