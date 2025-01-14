@@ -18,20 +18,8 @@ const Testimonial = () => {
         </h1>
         <div className="flex flex-wrap gap-6 px-14">
           <div className="bg-gray-500 block relative p-0.5 md:max-w-[20rem] bg-no-repeat py-4">
-            <div className="flex flex-row px-4 justify-between">
-              <div>
-                <FontAwesomeIcon
-                  icon={faThumbsUp}
-                  className="text-white text-2xl"
-                />
-              </div>
-              <div className="">
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-              </div>
-            </div>
-            <p className="px-4 py-2">
+            
+            <p className="px-4 py-4">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
               expedita minus velit distinctio eius. Possimus, at, quasi
               distinctio magnam cupiditate eveniet architecto maiores ab
@@ -51,21 +39,8 @@ const Testimonial = () => {
           </div>
 
           <div className="bg-gray-500 block relative p-0.5 md:max-w-[20rem] bg-no-repeat py-4">
-            <div className="flex flex-row px-4 justify-between">
-              <div>
-                <FontAwesomeIcon
-                  icon={faThumbsUp}
-                  className="text-white text-2xl"
-                />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-              </div>
-            </div>
-            <p className="px-4 py-2">
+            
+            <p className="px-4 py-4">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
               expedita minus velit distinctio eius. Possimus, at, quasi
               distinctio magnam cupiditate eveniet architecto maiores ab
@@ -85,22 +60,8 @@ const Testimonial = () => {
           </div>
 
           <div className="bg-gray-500 block relative p-0.5 md:max-w-[20rem] bg-no-repeat py-4">
-            <div className="flex flex-row px-4 justify-between">
-              <div>
-                <FontAwesomeIcon
-                  icon={faThumbsUp}
-                  className="text-white text-2xl"
-                />
-              </div>
-              <div>
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-                <FontAwesomeIcon icon={faStar} className="text-yellow-300" />
-              </div>
-            </div>
-            <p className="px-4 py-2">
+          
+            <p className="px-4 py-4">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
               expedita minus velit distinctio eius. Possimus, at, quasi
               distinctio magnam cupiditate eveniet architecto maiores ab
