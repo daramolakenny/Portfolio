@@ -13,6 +13,8 @@ const Hero = () => {
     gsap.to(".g_btn", {
       y: 0,
       rotate: 360,
+      // repeat: -1,
+      // yoyo: true,
       duration: 1,
     });
     gsap.from(".g_body", { opacity: 0, y: 100, duration: 1 });

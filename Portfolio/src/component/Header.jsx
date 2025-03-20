@@ -13,7 +13,7 @@ const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
-  const toggleNagigation = () => {
+  const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
       enablePageScroll();
@@ -69,7 +69,7 @@ const Header = () => {
             <HamburgerMenu />
           </nav>
 
-          <Button className="ml-auto lg:hidden mr-3" onClick={toggleNagigation}>
+          <Button className="ml-auto lg:hidden mr-3" onClick={toggleNavigation}>
             <MenuSvg openNavigation={openNavigation} />
           </Button>
         </div>
