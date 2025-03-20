@@ -2,8 +2,8 @@ import React from 'react';
 import Food from "/src/assets/images/Food.png";
 import Expense from "/src/assets/images/Expense.png";
 import Hamilton from "/src/assets/images/Hamilton.png";
-import Uootes from "/src/assets/images/Uootes.png";
-import Ecommerce from "/src/assets/images/Ecommerce.png";
+import Uootes from "../assets/images/Uootes.png";
+import Ecommerce from "../assets/images/Ecommerce.png";
 import Brainwave from "/src/assets/images/Brainwave.png";
 import Apple from "/src/assets/images/Apple.png";
 
@@ -44,18 +44,6 @@ const Project = () => {
                 <img
                   src={Uootes}
                   alt="Uootes Website"
-                  className="h-48 rounded-lg"
-                  width="300px"
-                />
-              </a>
-            </div>
-
-            <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">Redux Ecommerce <span className='text-[18px]'>(in progress)</span></h2>
-              <a href="https://react-redux-e-commerce-h7hb.vercel.app/">
-                <img
-                  src={Ecommerce}
-                  alt="React-Redux Ecommerce"
                   className="h-48 rounded-lg"
                   width="300px"
                 />
