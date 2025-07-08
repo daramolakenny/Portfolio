@@ -1,9 +1,8 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-// import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { navigation } from '../constant';
 import Button from "./Button";
+import { Spotlight } from "../component/ui/Spotlight";
 import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import { useState } from "react";
@@ -16,10 +15,10 @@ const Header = () => {
   const toggleNavigation = () => {
     if (openNavigation) {
       setOpenNavigation(false);
-      enablePageScroll();
+      // enablePageScroll();
     } else {
       setOpenNavigation(true);
-      disablePageScroll();
+      // disablePageScroll();
     }
   };
 
@@ -33,6 +32,21 @@ const Header = () => {
         openNavigation ? "bg-black" : "backdrop-blur-sm"
       }`}
     >
+      <div className="w-full">
+        <Spotlight
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen max-w-full max-h-screen"
+          fill="yellow"
+        />
+        <Spotlight
+          className="top-10 -right-10 h-[80vh] w-[50vw] max-w-full max-h-full "
+          fill="white"
+        />
+        <Spotlight
+          className="top-28 left-80 max-w-full max-h-full h-[80vh] w-[50vw]"
+          fill="green"
+        />
+      </div>
+
       <div className="max-w-screen-lg m-auto py-3">
         <div
           className="flex items-center container m-auto justify-between max-lg:py-4"
