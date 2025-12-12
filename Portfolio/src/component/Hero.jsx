@@ -21,42 +21,42 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-[#191923] w-full relative pt-[50px]" id="home">
+    <div className="bg-[#FFFFFF] w-full relative pt-[50px]" id="home">
       <div className="flex flex-col container lg:flex-row justify-between mx-auto text-white">
         <div className="text-center md:ml-20 max-w-[34rem] md:text-start py-6 g_body">
-          <h1 className="text-3xl font-bold py-3 pb-2 g_head">
-            Hello, <span className="text-blue-500">I'm</span>
+          <h1 className="text-3xl font-bold text-[#1A1A1A] py-3 pb-2 g_head">
+            Hello, <span className="text-[#38BDF8]">I'm</span>
           </h1>
-          <h1 className="text-blue-500 text-5xl font-bold py-3 pb-2 g_name">
+          <h1 className="text-[#38BDF8] text-5xl font-bold py-3 pb-2 g_name">
             Kehinde Daramola
           </h1>
-          <h1 className="text-3xl font-bold py-3 pb-2">Front-end Developer</h1>
-          <div className="text-sm pb-6 bg-blend-lighten mb-2 md:bg-blend-darken" id="heroText">
+          <h1 className="text-3xl text-[#1A1A1A] font-bold py-3 pb-2">Front-end Developer</h1>
+          <div className="text-sm text-[#1A1A1A] pb-6 bg-blend-lighten mb-2 md:bg-blend-darken" id="heroText">
             Enthusiastic Front-end Developer with a robust foundation in Library
             and Information Science, aiming to integrate my analytical prowess
             and technical expertise to engineer cutting-edge solutions.
             Dedicated to propelling technological innovation and delivering
             top-tier results in a dynamic software development landscape.
           </div>
-          <a href="tel:+2348147655242" className="rounded-md bg-blue-500 text-white p-2 text-2xl g_btn">Let's Talk</a>
+          <a href="tel:+2348147655242" className="rounded-md bg-[#38BDF8] text-[#1A1A1A] p-2 text-2xl g_btn">Let's Talk</a>
           
           <div className="text-white text-4xl pt-2 mt-6 pb-6">
             <div className="flex justify-center md:justify-start space-x-4">
               <a
                 href="https://x.com/ADEDEJI75478695"
-                className="bg-blue-500 flex items-center justify-center mt-2 rounded w-10 h-10"
+                className="bg-[#38BDF8] flex items-center justify-center mt-2 rounded w-10 h-10"
               >
                 <FontAwesomeIcon icon={faX} className="text-[1rem] g_btn" />
               </a>
               <a
                 href="https://github.com/daramolakenny"
-                className="bg-blue-500 flex items-center justify-center mt-2 rounded w-10 h-10"
+                className="bg-[#38BDF8] flex items-center justify-center mt-2 rounded w-10 h-10"
               >
                 <FontAwesomeIcon icon={faGithub} className="text-[1.5rem] g_btn" />
               </a>
               <a
                 href="https://www.linkedin.com/in/daramola-kehinde-14028b292/"
-                className="bg-blue-500 flex items-center justify-center mt-2 rounded w-10 h-10"
+                className="bg-[#38BDF8] flex items-center justify-center mt-2 rounded w-10 h-10"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="text-[1.5rem] g_btn" />
               </a>

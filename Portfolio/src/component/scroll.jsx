@@ -26,7 +26,7 @@ const ScrollToTopButton = () => {
     <a
       href="#home"
       id="scrollToTop"
-      className="fixed bottom-4 md:right-36 right-8 bg-blue-500 text-white p-2 rounded-full"
+      className="fixed bottom-4 md:right-36 right-8 bg-[#38BDF8] text-[#1A1A1A] p-2 rounded-full"
     >
       <FontAwesomeIcon icon={faArrowUp} />
     </a>

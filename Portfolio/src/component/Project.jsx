@@ -8,17 +8,24 @@ import Nextcommerce from "../assets/images/Nextcommerce.png";
 import Brainwave from "/src/assets/images/Brainwave.png";
 import Apple from "/src/assets/images/Apple.png";
 
+const Card = ({ title, imageSrc, link }) => (
+  <div className="rounded-md block relative p-0.5 md:max-w-[20rem] bg-no-repeat py-4 shadow-2xl">
+    <h2 className="text-2xl text-[#1A1A1A] px-2 font-bold">{title}</h2>
+    <div>{imageSrc}</div>
+  </div>
+);
+
 const Project = () => {
   return (
-    <div className="w-full relative bg-[#191923] pt-20 pb-6" id="project">
-      <div className="flex flex-col container pb-4 md:mx-auto py-8 px-auto md:px-6 text-white">
+    <div className="w-full relative bg-[#F5F5F5] pt-20 pb-6" id="project">
+      <div className="flex flex-col container pb-4 md:mx-auto py-8 px-6 md:pl-[88px] md:px-6 text-white">
         <div className="flex flex-col">
           <div className="py-4 max-w-[24rem] mx-auto text-center md:[]24rem]">
-            <h2 className="text-white px-14 font-sans font-bold text-3xl pb-2">
+            <h2 className="text-[#1A1A1A] px-14 font-sans font-bold text-3xl pb-2">
               Recent{" "}
-              <span className="text-blue-500 font-extrabold">Projects</span>
+              <span className="text-[#38BDF8] font-extrabold">Projects</span>
             </h2>
-            <div>
+            <div className='text-[#1A1A1A]'>
               These projects represent the culmination of my skills and
               expertise in front-end and back-end development, utilizing
               technologies such as the MERN stack (MongoDB, Express.js, React,
@@ -26,86 +33,95 @@ const Project = () => {
             </div>
           </div>
 
-          <div className="flex flex-wrap mr-20 gap-10 md:flex-row ml-[5.5rem]">
-            <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">Hamilton</h2>
-              <a href="http://hamiltontechnical.com">
-                <img
-                  src={Hamilton}
-                  alt="Hamilton"
-                  className="h-48 rounded-lg"
-                  width="300px"
+          <div className="flex flex-wrap gap-6 px-14 md:flex-row">
+              <div>
+                <Card
+                  title="Hamilton"
+                  imageSrc={
+                    <a href="http://hamiltontechnical.com">
+                  <img
+                      src={Hamilton}
+                      alt="Hamilton"
+                      className="h-48 py-6 rounded-lg"
+                      width="300px"
+                    />
+                    </a>}
                 />
-              </a>
-            </div>
+              </div>
 
-            <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">
-                Uootes Web{" "}
-                <span className="text-[18px]">(in collaboration)</span>
-              </h2>
-              <a href="http://Uootes.com">
+              <div>
+                <Card
+                  title="Fintech Website"
+                  imageSrc={
+                  <a href="http://Uootes.com">
                 <img
                   src={Uootes}
                   alt="Uootes Website"
                   className="h-48 rounded-lg"
                   width="300px"
-                />
-              </a>
-            </div>
+                /> </a>}
+              />
+              </div>
 
-            <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">
-                Food Delivery{" "}
-                <span className="text-[18px]">(in progress)</span>
-              </h2>
-              <a href="https://react-redux-e-commerce-h7hb.vercel.app/">
-                <img
-                  src={Nextcommerce}
-                  alt="React-Redux Ecommerce"
-                  className="h-48 rounded-lg"
-                  width="300px"
-                />
-              </a>
-            </div>
+              <div>
+                <Card
+                  title="Expense Tracker"
+                  imageSrc={
+                    <a href="">
+                      <img
+                      src={Expense}
+                      alt="Expense-Tracker"
+                      className="h-48 rounded-md"
+                      width="300px"
+                    />
+                  </a>}
+              />
+              </div>
 
-            <div className="shadow-2xl">
-              <h2 className="text-2xl font-bold">Expense Tracker</h2>
-              <a href="">
-                <img
-                  src={Expense}
-                  alt="Expense-Tracker"
-                  className="h-48 rounded-md"
-                  width="300px"
+              <div>
+                <Card
+                  title="Ecommerce"
+                  imageSrc={
+                    <a href="https://react-redux-e-commerce-h7hb.vercel.app/">
+                      <img
+                        src={Nextcommerce}
+                        alt="React-Redux Ecommerce"
+                        className="h-48 rounded-lg"
+                        width="300px"
+                      />
+                    </a>}
                 />
-              </a>
-            </div>
+              </div>
 
-            <div className="shadow-2xl" id="">
-              <h2 className="text-2xl">FoodRecipe App</h2>
-              <a href="">
-                <img
-                  src={Food}
-                  alt="FoodRecipe App"
-                  className="h-48 rounded-lg"
-                  width="300px"
+              <div>
+                <Card
+                  title="FoodRecipe App"
+                  imageSrc={
+                  <img
+                    src={Food}
+                    alt="FoodRecipe App"
+                    className="h-48 rounded-lg"
+                    width="300px"
+                  />}
                 />
-              </a>
-            </div>
+              </div>
 
-            <div className="shadow-2xl">
-              <h2 className="text-2xl">Apple Phone</h2>
-              <a href="">
-                <img
-                  src={Apple}
-                  alt="Apple"
-                  className="h-48 rounded-lg"
-                  width="300px "
+              <div>
+                <Card
+                  title="Titanium App"
+                  imageSrc={
+                  <a href="">
+                    <img
+                      src={Apple}
+                      alt="Apple"
+                      className="h-48 rounded-lg"
+                      width="330px "
+                    />
+                  </a>}
                 />
-              </a>
-            </div>
+              </div>
 
-            <div className="shadow-2xl">
+            {/* <div className="shadow-2xl">
               <h2 className="text-2xl">Brainwave</h2>
               <a href="">
                 <img
@@ -115,7 +131,7 @@ const Project = () => {
                   width="300px"
                 />
               </a>
-            </div>
+            </div>  */}
           </div>
         </div>
       </div>

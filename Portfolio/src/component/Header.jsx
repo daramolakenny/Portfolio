@@ -1,4 +1,4 @@
-import React from "react";
+import { useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { navigation } from '../constant';
 import Button from "./Button";
@@ -7,10 +7,14 @@ import MenuSvg from '../assets/svg/MenuSvg';
 import { HamburgerMenu } from './design/Header';
 import { useState } from "react";
 import "../App.css";
+// import { FaMoon, FaSun } from "react-icons/fa";
+import { ThemeContext } from "../context/ThemeContextProvider";
+
 
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const {theme, toggleTheme} = useContext(ThemeContext);
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -28,8 +32,8 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 bg-black lg:backdrop-blur-sm ${
-        openNavigation ? "bg-black" : "backdrop-blur-sm"
+      className={`fixed top-0 left-0 w-full z-50 bg-[#1A1A1A] shadow-lg lg:backdrop-blur-sm ${
+        openNavigation ? "bg-[#1A1A1A]" : "backdrop-blur-sm"
       }`}
     >
       <div className="w-full">
@@ -54,13 +58,15 @@ const Header = () => {
         >
           <div>
             <a href="/">
-              <h1 className="text-3xl bg-gradient-to-r from-slate-600 to-slate-200">{`<Kenny />`}</h1>
+              <h1 className="text-3xl bg-gradient-to-r from-[#38BDF8] to-slate-100">
+                {`<Kenny />`}
+              </h1>
             </a>
           </div>
 
           <nav
             className={`${
-              openNavigation ? "flex bg-black" : "hidden"
+              openNavigation ? "flex bg-[#1A1A1A]" : "hidden"
             } fixed top-[5rem] left-0 right-0 bottom-0 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
           >
             <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
@@ -69,7 +75,7 @@ const Header = () => {
                   key={item.id}
                   href={item.url}
                   onClick={handleClick}
-                  className={`block relative font-code text-2xl uppercase text-white transition-colors hover:bg-gradient-to-r from-slate-50 to-slate-700 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
+                  className={`block relative font-code text-2xl uppercase text-[#F5F5F5] transition-colors hover:bg-gradient-to-r from-[#38BDF8] to-slate-100 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                     item.url === pathname.hash
                       ? "z-2 lg:text-n-1"
                       : "lg:text-n-1/50"
@@ -82,6 +88,13 @@ const Header = () => {
 
             <HamburgerMenu />
           </nav>
+
+          {/* <button 
+            className="text-2xl text-white"
+            onClick={toggleTheme}
+          >
+            {theme === "light" ? <FaMoon size={30} /> : <FaSun size={30} />}         
+          </button> */}
 
           <Button className="ml-auto lg:hidden mr-3" onClick={toggleNavigation}>
             <MenuSvg openNavigation={openNavigation} />
