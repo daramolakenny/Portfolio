@@ -82,7 +82,7 @@ const Project = () => {
                 <Card
                   title="Ecommerce"
                   imageSrc={
-                    <a href="https://react-redux-e-commerce-h7hb.vercel.app/">
+                    <a href="https://react-redux-commerce-h7hb.vercel.app/">
                       <img
                         src={Nextcommerce}
                         alt="React-Redux Ecommerce"
