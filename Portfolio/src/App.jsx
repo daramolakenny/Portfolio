@@ -12,7 +12,7 @@ import ThemeContextProvider from "./context/ThemeContextProvider";
 const App = () => {
   return (
     <ThemeContextProvider>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden light:bg-black light:text-black">
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
         <Service />

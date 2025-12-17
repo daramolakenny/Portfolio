@@ -3,37 +3,51 @@ import Food from "/src/assets/images/Food.png";
 import Expense from "/src/assets/images/Expense.png";
 import Hamilton from "/src/assets/images/Hamilton.png";
 import Uootes from "../assets/images/Uootes.png";
-import Ecommerce from "../assets/images/Ecommerce.png";
 import Nextcommerce from "../assets/images/Nextcommerce.png";
-import Brainwave from "/src/assets/images/Brainwave.png";
 import Apple from "/src/assets/images/Apple.png";
+import { motion } from "framer-motion";
 
-const Card = ({ title, imageSrc, link }) => (
+const Card = ({ title, imageSrc}) => (
   <div className="rounded-md block relative p-0.5 md:max-w-[20rem] bg-no-repeat py-4 shadow-2xl">
-    <h2 className="text-2xl text-[#1A1A1A] px-2 font-bold">{title}</h2>
+    <h2 className="text-2xl text-[#FFFFFF] px-2 font-bold">{title}</h2>
     <div>{imageSrc}</div>
   </div>
 );
 
 const Project = () => {
   return (
-    <div className="w-full relative bg-[#F5F5F5] pt-20 pb-6" id="project">
+    <div className="w-full relative bg-[#38BDF8] pt-20 pb-20" id="project">
       <div className="flex flex-col container pb-4 md:mx-auto py-8 px-6 md:pl-[88px] md:px-6 text-white">
         <div className="flex flex-col">
-          <div className="py-4 max-w-[24rem] mx-auto text-center md:[]24rem]">
-            <h2 className="text-[#1A1A1A] px-14 font-sans font-bold text-3xl pb-2">
+          <motion.div 
+            initial={{ opacity: 0, y: 50, scale: 0.9, rotate: -1 }} whileInView={{ opacity: 1, y: 0, scale: 1.25, rotate: 0 }} transition={{ duration: 0.8, ease: "easeInOut" }}
+            className="pt-2 md:max-w-[26rem] mx-auto text-center md:[24rem]]"
+          >
+            <h2 className="px-14 font-sans font-bold text-3xl pb-2">
               Recent{" "}
-              <span className="text-[#38BDF8] font-extrabold">Projects</span>
+              <span className="text-[#1F2937] font-extrabold">Projects</span>
             </h2>
-            <div className='text-[#1A1A1A]'>
+            <div className='justify-center mb-10'>
               These projects represent the culmination of my skills and
               expertise in front-end and back-end development, utilizing
               technologies such as the MERN stack (MongoDB, Express.js, React,
               Node.js), along with other cutting-edge tools.
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-wrap gap-6 px-14 md:flex-row">
+          <motion.div 
+            initial={{
+              opacity: 0
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1.15,
+              transition: {
+                duration: 2
+              }
+            }}
+            className="flex flex-wrap pt-20 gap-6 justify-center md:px-2 lg:md:px-0 md:flex-row"
+          >
               <div>
                 <Card
                   title="Hamilton"
@@ -115,24 +129,12 @@ const Project = () => {
                       src={Apple}
                       alt="Apple"
                       className="h-48 rounded-lg"
-                      width="330px "
+                      width="300px "
                     />
                   </a>}
                 />
               </div>
-
-            {/* <div className="shadow-2xl">
-              <h2 className="text-2xl">Brainwave</h2>
-              <a href="">
-                <img
-                  src={Brainwave}
-                  alt="Brainwave"
-                  className="h-48 rounded-md"
-                  width="300px"
-                />
-              </a>
-            </div>  */}
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
@@ -140,54 +142,3 @@ const Project = () => {
 }
 
 export default Project
-
-{/* <div class="bg-gray-500 pt-6 pb-0.5" id="project">
-    <div class="max-w-screen-lg text-white m-auto mb-10 py-12">
-      <h4 class="text-center font-bold pb-2">My <span class="text-blue-500">Jobs</span></h4>
-      <h2 class="text-center font-bold pb-10 text-3xl md:text-3xl">Recent Projects</h2>
-      <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
-        <div class="shadow-2xl" id="" >
-          <h2 class="text-2xl font-bold">Expense Tracker</h2>
-          <a href="">
-            <img src="../public/Asset/expense-tracker.png" alt="Expense Tracker App" class="h-48 rounded-lg" width="330px">
-          </a>
-        </div>
-
-        <div class="text-2xl">
-          <h2 class="text-2xl font-bold">FoodRecipe</h2>
-          <a href="">
-            <img src="../public/Asset/foodrecipe.png" alt="FoodRecipe App" class="h-48 rounded-lg" width="330px ">
-          </a>
-        </div>
-
-        <div class="text-2xl">
-          <h2 class="text-2xl font-bold">Weather App</h2>
-          <a href="">
-            <img src="../public/Asset/weather.png" alt="Weather App" class="h-48 rounded-md" width="330px">
-          </a>
-        </div>
-      </div>
-      <!-- <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
-        <div class="shadow-2xl" id="" >
-          <h2 class="text-2xl">Expense Tracker</h2>
-          <a href="">
-            <img src="./Asset/expense-tracker.png" alt="Expense Tracker App" class="h-48 rounded-lg" width="330px">
-          </a>
-        </div>
-
-        <div class="text-2xl">
-          <h2>FoodRecipe</h2>
-          <a href="">
-            <img src="./Asset/foodrecipe.png" alt="FoodRecipe App" class="h-48 rounded-lg" width="330px ">
-          </a>
-        </div>
-
-        <div class="text-2xl">
-          <h2>Weather App</h2>
-          <a href="">
-            <img src="./Asset/weather.png" alt="Weather App" class="h-48 rounded-md" width="330px">
-          </a>
-        </div>
-      </div> -->
-    </div>
-  </div> */}

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="lg:static  lg:flex lg:bg-transparent">
           <div className=" flex flex-col items-center justify-center lg:flex-col">
             <div className="text-2xl">
-              <h1 className="font-bold">Address:</h1>{" "}
+              <h1 className="font-bold py-6 text-black">Address:</h1>{" "}
               <span>
                 No 10, Idowukuye St Cele bus stop, Berger, Lagos State Nigeria.
               </span>
@@ -70,37 +70,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// import React from 'react'
-// import { navigation } from '../constant';
-
-// const Footer = () => {
-//   return (
-//     <div className="w-full pl-10 lg:backdrop-blur-sm bg-black">
-//       <div
-//         className="flex flex-col items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4"
-//         href="#hero"
-//       >
-//         <a href="/">
-//           <h1 className="text-3xl bg-gradient-to-r from-slate-50 to-slate-700">{`<Kenny />`}</h1>
-//         </a>
-
-//         <footer className="left-0 right-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent">
-//           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-col">
-//             {navigation.map((item) => (
-//               <a
-//                 key={item.id}
-//                 href={item.url}
-//                 className="block relative font-code text-2xl uppercase text-white transition-colors hover:bg-gradient-to-r from-slate-50 to-slate-700 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:leading-5 lg:hover:text-n-1"
-//               >
-//                 {item.title}
-//               </a>
-//             ))}
-//           </div>
-//         </footer>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Footer;

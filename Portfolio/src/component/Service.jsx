@@ -6,10 +6,10 @@ import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 
 const Service = () => {
   return (
-    <div className="bg-[#1A1A1A] w-full relative pt-20 pb-10" id="service">
+    <div className="bg-[#1ab7fa] w-full relative pt-20 pb-10" id="service">
       <div className="container mx-auto py-8 md:pl-16">
-        <h3 className="text-white px-14 font-sans font-bold text-1xl pb-2">
-          My <span className="text-[#38BDF8]">service</span>
+        <h3 className="text-white px-14 font-bold text-1xl pb-2">
+          My <span className="text-[#1F2937] text-lg">service</span>
         </h3>
         <h1 className="font-bold font-sans text-white px-14 text-4xl pb-4">
           What I Do

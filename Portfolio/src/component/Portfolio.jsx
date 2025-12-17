@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faX } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLocation, faX } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 import axios from "axios";
 
 const Portfolio = () => {
@@ -34,110 +32,111 @@ const Portfolio = () => {
 
   return (
     <div
-      className="w-full relative bg-[#1A1A1A] pt-[50px] md:pt-[70px] md:pb-8 lg:pt-[90px] lg:pb-10"
+      className="w-full relative bg-[#1ab7fa] text-[#FFFFFF] pt-[50px] md:pt-[70px] md:pb-8 lg:pt-[90px] lg:pb-10"
       id="portfolio"
     >
-      <div className="relative flex flex-col md:flex-row gap-2 container justify-around mx-auto text-[#F5F5F5]">
-        <div className="flex flex-col bg-[#F5F5F5] w-full ml-2 mr-6 md:w-[40%] items-start max-lg:py-4 p-2 rounded-md">
-          <div className="text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-[#38BDF8] to-slate-100 text-[#1A1A1A] mb-4 px-2">
-            <a href="/">Portfolio</a>
-          </div>
+      <motion.div 
+        initial={{
+          opacity: 0,
+          rotate: -1
+        }}
+        whileInView={{
+          opacity: 1,
+          rotate:360,
+          transition: {
+            duration: 1.8
+          }
+        }}
+        className="flex flex-col text-white pb-10">
+        <h1 className="text-4xl text-center font-bold">Lets <span className="text-[#1F2937]">Connect</span></h1>
+        <p className="text-center py-2">Have a project in mind? Let's work together to bring your ideas to life</p>
+      </motion.div>
+      
+      <div className="relative flex flex-col md:flex-row gap-2 container justify-center mx-auto text-[#F5F5F5]">
+        <div className="flex flex-col ml-2 mr-6  items-start max-lg:py-4 p-2 rounded-md">
           <div className="flex-col items-start lg:flex-col">
             <div className="flex flex-col items-start pb-4 text-2xl md:items-start space-y-2">
-              <h1 className="font-bold">Contact Me:</h1>
-              <div className="flex items-center text-[22px] py">
-                <FontAwesomeIcon icon={faPhone} className="text-[#38BDF8]" />
-                <a href="tel:+2348147655242">
-                  <span className="text-[#1A1A1A]">+234 8147 655 242</span>
-                </a>
-              </div>
+              
               <div className="flex items-center text-[22px]">
-                <FontAwesomeIcon icon={faEnvelope} className="text-[#38BDF8]" />
-                <a href="mailto:daramolakenny96@gmail.com">
-                  <span className="pl-2 text-[#1A1A1A]">
-                    daramolakenny96@gmail.com
-                  </span>
+                <FontAwesomeIcon icon={faEnvelope} className="rounded-md bg-[#1F2937] hover:bg-[#F87138] hover:text-white text-[#38BDF8] p-4" />
+                <a href="mailto:daramolaknny96@gmail.com">
+                <div className="ml-2">
+                  <h1 className="font-bold text-[#F3F4F6]">Email</h1>
+                    <span className="text-[16px] text-gray-100">
+                      daramolakenny96@gmail.com
+                    </span>
+                </div>
                 </a>
               </div>
-            </div>
 
-            <div className="flex flex-col items-start text-2xl md:items-start space-y-2">
-              <h1 className="font-bold text-[#1A1A1A]">My Profile:</h1>
-              <div className="flex item-center gap-2">
-                <a
-                  href="https://x.com/ADEDEJI75478695"
-                  className="bg-[#38BDF8] p-2 flex items-center justify-center mt-2 rounded-full w-10 h-10"
-                >
-                  <FontAwesomeIcon icon={faX} className="text-[#F5F5F5]" />
-                </a>
-                <a
-                  href="https://github.com/daramolakenny"
-                  className="bg-[#38BDF8] p-2 flex items-center justify-center mt-2 rounded-full w-10 h-10"
-                >
-                  <FontAwesomeIcon icon={faGithub} className="text-[#F5F5F5]" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/daramola-kehinde-14028b292/"
-                  className="bg-[#38BDF8] p-2 flex items-center justify-center mt-2 rounded-full w-10 h-10"
-                >
-                  <FontAwesomeIcon icon={faLinkedin} className="text-[#F5F5F5]" />
-                </a>
+              <div className="flex items-center text-[22px] py">
+                <FontAwesomeIcon icon={faPhone} className="rounded-md bg-[#1F2937] hover:bg-[#F87138] hover:text-white text-[#38BDF8] p-4" />
+                <div className="ml-2">
+                  <h1 className="font-bold">Phone</h1>
+                  <a href="tel:+2348147655242">
+                    <span className="text-[16px] text-gray-100">+234 8147 655 242</span>
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center text-[22px] cursor-pointer">
+                <FontAwesomeIcon icon={faLocation} className="rounded-md bg-[#1F2937] hover:bg-[#F87138] hover:text-white text-[#38BDF8] p-4" />
+                <div className="ml-2">
+                  <h1 className="font-bold">Location</h1>
+                    <span className="text-[16px] text-gray-100">
+                      Lagos, Nigeria
+                    </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         
-        <div className="bg-[#F5F5F5] px-2 w-[95%] md:w-[30rem] ml-2 pb-2 rounded-md">
+        <div className="px-2 md:w-[30rem] md:ml-14 pb-2 rounded-md">
           <form
             action=""
             id="contactForm"
-            className="flex flex-col pt-10 text-white"
+            className="flex flex-col"
           >
-            <div className="flex flex-row border shadow-lg mb-2">
-              <div className="pt-6 w-14 bg-[#38BDF8]">
-                <FontAwesomeIcon icon={faAt} className="pl-4" />
-              </div>
+            <div className="flex flex-col mb-2 ml-2">
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="email"
                 name="email"
-                placeholder="Email"
-                className="w-full h-12 pl-2 pt-4 placeholder-[#1A1A1A] bg-[#F5F5F5] text-[#1A1A1A] md:h-14 lg:h-16 focus:outline-none focus:shadow-none"
+                placeholder="Your name"
+                className="w-full h-10 px-4 bg-[#38BDF8] shadow-lg rounded-xl placeholder:text-gray-100 md:h-10 lg:h-12 focus:outline-none focus:shadow-none cursor-pointer"
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
             
-            <div className="flex flex-row border shadow-lg mb-2">
-              <div className="pt-6 w-14 bg-[#38BDF8]">
-                <FontAwesomeIcon icon={faAt} className="pl-4" />
-              </div>
+            <div className="flex flex-col shadow-lg mb-2 ml-2">
+              <label htmlFor="">Email</label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="Subject"
-                className="w-full h-12 pt-4 pl-2 placeholder-[#1A1A1A] bg-[#F5F5F5] text-[#1A1A1A] md:h-14 lg:h-16 focus:outline-none focus:shadow-none"
+                placeholder="your@email.com"
+                className="w-full h-10 px-4 placeholder-[#1A1A1A] bg-[#38BDF8] shadow-lg rounded-xl placeholder:text-white md:h-10 lg:h-12 focus:outline-none focus:shadow-none cursor-pointer"
                 onChange={(e) => setSubject(e.target.value)}
                 required
               />
             </div>
-            <div className="flex flex-row border shadow-lg mb-2">
-              <div className="pt-4 w-14 bg-[#38BDF8]">
-                <FontAwesomeIcon icon={faEnvelope} className="pl-4" />
-              </div>
+            <div className="flex flex-col shadow-lg mb-2 ml-2">
+              <label htmlFor="">Message</label>
               <textarea
                 type="text"
                 id="message"
                 name="message"
-                placeholder="Message"
-                className="w-full h-36 pt-4 pl-2 placeholder-[#1A1A1A] bg-[#F5F5F5] text-[#1A1A1A] md:h-40 lg:h-44 focus:outline-none focus:shadow-none"
+                placeholder="Your message..."
+                className="w-full h-20 pt-2 pl-2 bg-[#38BDF8] shadow-lg rounded-xl placeholder:text-white md:h-40 lg:h-44 focus:outline-none focus:shadow-none cursor-pointer"
                 onChange={(e) => setMessage(e.target.value)}
                 required
               ></textarea>
             </div>
             <p id="status-message"  className="text-white my-4"></p> 
-            <button type="submit" onClick={sendEmail} className="w-40 pb-4 rounded-md bg-[#38BDF8] text-white py-2 px-4 text-2xl">
+            <button type="submit" onClick={sendEmail} className="w-40 pb-4 ml-2 rounded-md bg-[#1F2937] hover:bg-[#F87138] hover:text-white text-[#38BDF8] py-2 px-4 text-2xl">
                 Submit
             </button>
           </form>
