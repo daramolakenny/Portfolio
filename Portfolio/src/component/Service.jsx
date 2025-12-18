@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGear } from "@fortawesome/free-solid-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
 
 const Service = () => {
   return (
@@ -16,7 +17,11 @@ const Service = () => {
         </h1>
 
         <div className="flex flex-wrap gap-10 md:pl-20 px-14 md:flex-row">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }} 
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
             <Card
               icon={<FontAwesomeIcon
                 icon={faGear}
@@ -29,9 +34,13 @@ const Service = () => {
               React, Node.js) or similar technologies to build scalable and
               efficient solutions."
             />
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 100, rotate: -1 }}
+            whileInView={{ opacity: 1, y:0, scaleY: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
               <Card
                 icon={
                   <FontAwesomeIcon
@@ -46,9 +55,12 @@ const Service = () => {
               translate design mockups into functional components and ensuring
               seamless interactions between users and the application."
               />
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div
+            initial={{ opacity: 0, x: 100, y: 50 }} whileInView={{ opacity: 1, x: 0, y: 0 }} 
+            transition={{ duration: 2, ease: "easeInOut" }}
+          >
             <Card 
                 icon={
                   <FontAwesomeIcon
@@ -64,7 +76,7 @@ const Service = () => {
               and ensure the overall performance and security of the
               application."
               />
-          </div>
+          </motion.div>
         </div>
 
       </div>
@@ -73,43 +85,3 @@ const Service = () => {
 };
 
 export default Service;
-
-{
-  /* <section class="bg-gray-700 py-16" id="skills">
-    <div class="max-w-screen-lg mx-auto py-12">
-      <div class="flex flex-col md:flex-row max-w-screen-lg mx-auto justify-around text-white">
-        <div class="text-center items-center md:text-left border-white">
-          <!-- <h1 class="text-3xl font-bold py-3 pb-2">My, <span class="text-blue-500">Intro</span></h1> -->
-          <h4 class="font-bold text-sm">Favourite <span class="text-blue-500">Skills</span></h4>
-          <h1 class="text-3xl font-bold pb-2">My Skills</h1>
-          <p class="text-sm pb-6 bg-blend-lighten md:bg-blend-darken">
-            With the knowledge I have in web development and design,<br> I offer the best projects resulting in quality work.
-          </p>
-          <button class="pb-8">
-            <a href="#project" class="button rounded-md bg-blue-600 text-white p-2 text-2xl">See Projects</a>
-          </button>
-        </div>
-
-        <div class="flex items-center justify-around space-x-10">
-          <ol class="flex flex-col">
-            <li>HTML $ CSS</li>
-            <li>Javascript</li>
-            <li>Bootsrap</li>
-            <li>React.Js</li>
-            <li>React Testing Library</li>
-            <li>jQuery</li>
-          </ol>
-          
-          <ol class="flex flex-col" start="6">
-            <li>Typescript</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>Postman</li>
-            <li>Postgress</li>
-            <li>Git & GitHub</li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </section> */
-}

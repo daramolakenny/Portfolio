@@ -27,7 +27,7 @@ const Project = () => {
               Recent{" "}
               <span className="text-[#1F2937] font-extrabold">Projects</span>
             </h2>
-            <div className='justify-center mb-10'>
+            <div className='justify-center mb-10 px-6'>
               These projects represent the culmination of my skills and
               expertise in front-end and back-end development, utilizing
               technologies such as the MERN stack (MongoDB, Express.js, React,

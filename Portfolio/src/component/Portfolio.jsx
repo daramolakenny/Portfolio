@@ -42,14 +42,14 @@ const Portfolio = () => {
         }}
         whileInView={{
           opacity: 1,
-          rotate:360,
+          rotate:-360,
           transition: {
-            duration: 1.8
+            duration: 1
           }
         }}
         className="flex flex-col text-white pb-10">
         <h1 className="text-4xl text-center font-bold">Lets <span className="text-[#1F2937]">Connect</span></h1>
-        <p className="text-center py-2">Have a project in mind? Let's work together to bring your ideas to life</p>
+        <p className="text-center py-2 hover:text-[#1F2937]">Have a project in mind? Let's work together to bring your ideas to life</p>
       </motion.div>
       
       <div className="relative flex flex-col md:flex-row gap-2 container justify-center mx-auto text-[#F5F5F5]">
